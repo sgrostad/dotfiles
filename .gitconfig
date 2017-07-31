@@ -1,0 +1,47 @@
+[user]
+	email = sindre.grostad@icloud.com
+	name = sindre
+
+[color]
+        ui = auto
+
+[core]
+        quotepath = false
+        autocrlf = input
+        safecrlf = warn
+        editor = vim
+
+[alias]
+    br = branch -a
+    st = status
+    cl = log --stat -C -2
+    c = commit
+    co = checkout
+    d = diff --color-words
+    dh = diff HEAD
+    dc = diff --staged
+    dw = diff --word-diff
+    dcw = diff --color-words
+    dm = !git diff | mate
+    dv = !git diff | vim
+    who = shortlog -s --
+    lop = log -p # View changes
+    lod = log --oneline --decorate
+    lot = log --graph #aka log tree
+    cam = commit -a -m
+    prune-branches = "!git branch --merged | grep -Ev '^\\*|  master$|  develop$' | xargs git branch --delete"
+
+[branch "master"]
+	mergeoptions = --no-ff
+
+[branch "develop"]
+	mergeoptions = --no-ff
+
+[branch]
+	autosetuprebase = always
+ 
+[push]
+	default = simple
+
+[pull]
+	rebase = true
