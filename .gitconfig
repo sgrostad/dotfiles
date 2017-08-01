@@ -23,13 +23,6 @@
     dw = diff --word-diff
     dcw = diff --color-words
     dm = !git diff | mate
-    dv = !git diff | vim
-    who = shortlog -s --
-    lop = log -p # View changes
-    lod = log --oneline --decorate
-    lot = log --graph #aka log tree
-    cam = commit -a -m
-    prune-branches = "!git branch --merged | grep -Ev '^\\*|  master$|  develop$' | xargs git branch --delete"
 
 [branch "master"]
 	mergeoptions = --no-ff
