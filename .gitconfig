@@ -12,12 +12,12 @@
         editor = vim
 
 [alias]
-    br = branch -a
+    br = branch 
     st = status
     cl = log --stat -C -2
     c = commit
     co = checkout
-    d = diff --color-words
+    d = diff
     dh = diff HEAD
     dc = diff --staged
     dw = diff --word-diff
