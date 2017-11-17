@@ -16,6 +16,7 @@
     st = status
     cl = log --stat -C -2
     c = commit
+    cm = commit -m
     co = checkout
     d = diff
     dh = diff HEAD
